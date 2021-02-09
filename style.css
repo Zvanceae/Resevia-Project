@@ -187,6 +187,7 @@ p {
     max-width: 1600px;
     margin: 0 auto;
     box-sizing: border-box;
+    padding-left: 0px;
 }
 #C {
     grid-area: c;
@@ -200,12 +201,19 @@ p {
     background-color: lightgray;
     border-radius: 1rem;
 }
+.cdescription{
+    display:flex;
+    align-items:flex-start;
+    width: 100%;
+    height: 20px;
+    padding:0px 0px 0px 40px;
+    margin: 0;
+    font-weight: 700;
+}
 .imgacc {
-    border: solid 2px black;
     height: 200px;
     width: 250px;
     background-color: white;
-    margin-top: 10px;
     border-radius: 1rem;
 }
 .imgacc .imag {
@@ -222,21 +230,64 @@ p {
     border-radius: 1rem 1rem 0 0;
 }
 .description {
-    border:solid 2px chartreuse;
     height: 30%;
     margin: 5px;
     margin: 0;
 }
+.showmorec{
+    display:flex;
+    align-items:flex-end;
+    width: 100%;
+    height: 20px;
+    padding:20px 0 20px 40px;
+    margin: 0;
+    font-weight: 700;
+}
 
 #D {
-    background-color: lightgray;
+    background-color: rgb(229, 226, 226);
     grid-area: d;
     display: flex;
     min-height: 500px;
     flex: 1 1 280px;
+    margin-left: 30px;
     border-radius: 1rem;
+    flex-direction: column;
 }
+.chestie {
+    margin: 30px auto;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 160px;
+    border-radius: .9em;
+    padding: 5px;
+    background-color: white;
 
+    display: flex;
+}
+.titlemp {
+    display: flex;
+    align-items: flex-start;
+    height: 20px;
+    padding:20px 0px 20px 40px;
+    margin: 0;
+    font-weight: 700; 
+
+}
+.imgd {
+    width: 150px;
+    height: inherit;
+    margin-bottom: 30px;
+    background-color: white;
+    border-radius: 1rem 0 0 1rem; 
+    margin-right: 10px;
+}
+.imgd img {
+    width: 150px;
+    height: inherit;
+    border-radius: 1rem 0 0 1rem;
+
+}
 #E {
     background-color: #0065FC;
     grid-area:e;
@@ -247,10 +298,10 @@ p {
     grid-area: f;
 }
 
-/* @media all and (max-width: 320px) {
-    .container {
-        display: block;
-        margin: 5px 0px;
-    }
-} */
 
+@media only screen and (max-width: 650px) {
+    #D {
+        margin-bottom: 30px;
+        margin-left: 0px;
+    }
+  }
