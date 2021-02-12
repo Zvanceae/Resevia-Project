@@ -39,6 +39,7 @@ nav a{
 }
 h3 {
     margin-bottom:5px;
+    font-size:20px;
 }
 p {
     margin: 0px;
@@ -181,11 +182,10 @@ p {
     align-items: center;
 }
 
-.sectioncd {
+.sectionCD {
     display: flex;
     flex-wrap: wrap-reverse;
     max-width: 1600px;
-    margin: 0 auto;
     box-sizing: border-box;
     padding-left: 0px;
 }
@@ -194,45 +194,47 @@ p {
     display:flex;
     flex-wrap: wrap;
     min-height: 500px;
-    flex: 2 1 280px;
+    flex: 2 1 20px;
     justify-content: space-around;
     align-items: center;
     margin-right: 30px;
-    background-color: lightgray;
+    background-color: rgb(229, 226, 226);
     border-radius: 1rem;
 }
-.cdescription{
+.Cdescription{
     display:flex;
     align-items:flex-start;
     width: 100%;
     height: 20px;
-    padding:0px 0px 0px 40px;
-    margin: 0;
+    padding: 20px 0px 0px 40px;
     font-weight: 700;
+    font-size:20px;
 }
-.imgacc {
+.hotels {
     height: 200px;
     width: 250px;
     background-color: white;
     border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    margin: 15px;
 }
-.imgacc .imag {
-    height: 65%;
-    width: 95%;
-    margin-top: 5px;
-    margin-left: 5px;
-    margin-right: 5px;
+.picture {
     border-radius: 1rem;
+    width: 100%;
+    margin: 5px;
 }
-.imgacc img {
-    width: 239px;
-    height: 130px;
+.hotels img {
+    width: 100%;
+    height: 65%;
     border-radius: 1rem 1rem 0 0;
 }
-.description {
-    height: 30%;
-    margin: 5px;
-    margin: 0;
+.hotels figcaption{
+    height: 35%;
+    width: 100%;
+    border-radius:0 0 1rem 1rem;
+    font-size: 15px;
+    color: black;
 }
 .showmorec{
     display:flex;
@@ -242,6 +244,7 @@ p {
     padding:20px 0 20px 40px;
     margin: 0;
     font-weight: 700;
+    font-size:20px;
 }
 
 #D {
@@ -249,59 +252,117 @@ p {
     grid-area: d;
     display: flex;
     min-height: 500px;
-    flex: 1 1 280px;
+    flex: 1 1 40px;
     margin-left: 30px;
     border-radius: 1rem;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titlemp {
+    display:flex;
+    align-items:flex-start;
+    width: 100%;
+    height: 20px;
+    padding: 25px 0px 40px 40px;
+    font-weight: 700;
+    font-size:20px;
 }
 .chestie {
-    margin: 30px auto;
-    margin-left: 10px;
-    margin-right: 10px;
     height: 160px;
+    width: 85%;
     border-radius: .9em;
-    padding: 5px;
-    background-color: white;
-
+    background-color: rgb(255, 255, 255);
     display: flex;
-}
-.titlemp {
-    display: flex;
-    align-items: flex-start;
-    height: 20px;
-    padding:20px 0px 20px 40px;
-    margin: 0;
-    font-weight: 700; 
-
-}
-.imgd {
-    width: 150px;
-    height: inherit;
     margin-bottom: 30px;
-    background-color: white;
-    border-radius: 1rem 0 0 1rem; 
-    margin-right: 10px;
 }
-.imgd img {
-    width: 150px;
-    height: inherit;
+.chestie .picture {
+    display: inline-flex;
+    margin: 10px;
+}
+.chestie .picture img {
+    width: 40%;
+    height: 100%;
     border-radius: 1rem 0 0 1rem;
+} 
+.chestie .picture figcaption{
+    border-radius: 0 1rem 1rem 0; 
+}
 
-}
 #E {
-    background-color: #0065FC;
     grid-area:e;
+    border: solid 2px #0065FC;
+    /* max-height: 500px; */
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 12vw);
+    grid-gap: 15px;
 }
+.activities_in_marseille {
+    border: solid 2px red;
+    height: 30px;
+}
+.activities {
+    text-align: center;
+    border: solid 2px black;
+}
+.activities img{
+    width: 90%;
+    height: 80%;
+    border: solid 2px violet;
+}
+.activities figcaption {
+    border: solid 2px green;
+}
+.old-port {
+    border: solid 2px yellow;
+    grid-column: 1;
+    grid-row: 1 / 3;
+}
+.pomegues-fort{
+    grid-column: 2;
+    grid-row: 1;
+}
+.frioul-island {
+    grid-column: 2;
+    grid-row: 2;
+}
+.calanques-park {
+    grid-column: 3;
+    grid-row: 1 / 3;
+}
+.notre-dame {
+    grid-column: 4;
+    grid-row: 1;
+}
+.longcamp {
+    grid-column: 4;
+    grid-row: 2;
+} 
 
 #F {
     background-color: aqua;
     grid-area: f;
-}
+} 
 
 
 @media only screen and (max-width: 650px) {
+    #C {
+        margin-right: 0px;
+    }
+    #C .hotels {
+        margin-top: 30px;
+    }
     #D {
         margin-bottom: 30px;
         margin-left: 0px;
+    }
+    #E {
+        display: inline-block;
+    }
+    .activities {
+        margin-bottom: 30px;
     }
   }
