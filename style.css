@@ -6,8 +6,7 @@
     "a a a a" auto
     "b b b b" auto
     "c c d d" auto
-    "e e e e" auto
-    "f f f f" auto;
+    "e e e e" auto;
     margin-left: 20px;
     font-family: 'Raleway', sans-serif;
 }
@@ -198,7 +197,7 @@ p {
     justify-content: space-around;
     align-items: center;
     margin-right: 30px;
-    background-color: rgb(229, 226, 226);
+    background-color: #f2f2f2;;
     border-radius: 1rem;
 }
 .Cdescription{
@@ -249,7 +248,7 @@ p {
 }
 
 #D {
-    background-color: rgb(229, 226, 226);
+    background-color: #f2f2f2;;
     grid-area: d;
     display: flex;
     min-height: 500px;
@@ -294,19 +293,19 @@ p {
 
 #E {
     grid-area:e;
-    /* max-height: 500px; */
-    margin-top: 40px;
+    margin-top: 60px;
     margin-bottom: 40px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 10vw);
     grid-gap: 15px;
-    width: 90%;
+    width: 80%;
 }
-.activities_in_marseille {
+/* .activities_in_marseille {
     border: solid 2px red;
     height: 30px;
-}
+    text-align: start;
+} */
 .activities {
     border-radius: 1rem 1rem;
     width: 300px;
@@ -350,7 +349,7 @@ p {
     grid-column: 2;
     grid-row: 2;
     height: 80%;
-    margin-top: 30px;
+    margin-top: 40px;
 }
 .calanques-park {
     grid-column: 3;
@@ -364,14 +363,40 @@ p {
 .longcamp {
     grid-column: 4;
     grid-row: 2;
-    height: 95%;
 } 
 
 #F {
-    background-color: aqua;
-    grid-area: f;
+    display: grid;
+    grid-column: 3 / 1fr;
+    grid-row: 1 / 6vw;
+    background-color: #f2f2f2;
+    margin: 0px;
+    font-family: 'Raleway', sans-serif;
+    padding: 30px 0 30px 20px;
 } 
-
+.footer_about {
+    grid-column: 1;
+}
+.footer_ouraccommodation {
+    grid-column: 2;
+}
+.footer_assistance {
+    grid-column: 3;
+}
+.footerlist{
+    list-style-type: none;
+    padding-left: 0px;
+}
+.footerlist li{
+    margin: 10px 0 10px 0;
+}
+.footerlist li a{
+    text-decoration: none;
+    color: black;
+}
+.footerlist li a:hover{
+    color: #0065fc;
+}
 
 @media only screen and (max-width: 650px) {
     #C {
