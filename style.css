@@ -6,7 +6,8 @@
     "a a a a" auto
     "b b b b" auto
     "c c d d" auto
-    "e e e e" auto;
+    "e e e e" auto
+    "f f f f" auto;
     margin-left: 20px;
     font-family: 'Raleway', sans-serif;
 }
@@ -16,10 +17,13 @@ header{
     overflow: hidden;
 }
 nav a{
-    color: #0065FC;
+    color:#0065FC;
     text-decoration: none;
     float: right;
     padding: 15px 10px;
+}
+nav a:hover {
+border-top: #0065FC solid 2px;
 }
 #activ {
     color:black;
@@ -236,6 +240,12 @@ p {
     font-size: 15px;
     color: black;
 }
+.bluestars{
+    color: #0065FC;
+}
+.greystars{
+    color:lightgrey;
+}
 .showmorec{
     display:flex;
     align-items:flex-end;
@@ -366,6 +376,7 @@ p {
 } 
 
 #F {
+    grid-area: f;
     display: grid;
     grid-column: 3 / 1fr;
     grid-row: 1 / 6vw;
@@ -398,9 +409,13 @@ p {
     color: #0065fc;
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 600px) {
+    nav a:hover {
+        border-bottom: #0065FC solid 2px;
+    }
     #C {
         margin-right: 0px;
+        background-color: white;
     }
     #C .hotels {
         margin-top: 30px;
@@ -410,9 +425,15 @@ p {
         margin-left: 0px;
     }
     #E {
-        display: inline-block;
+        display: flex;
+        flex-direction: column;
     }
     .activities {
         margin-bottom: 30px;
+    }
+    #F {
+        display: inline-block;
+        margin: 0px;
+        padding-left: 10px;
     }
   }
