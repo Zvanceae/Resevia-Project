@@ -1,18 +1,23 @@
+body {
+    margin: 0px;
+}
+
 .container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     grid-template:
-    "h h h h" auto
-    "a a a a" auto
-    "b b b b" auto
-    "c c d d" auto
-    "e e e e" auto
-    "f f f f" auto;
-    margin-left: 20px;
+    "header header header header" auto
+    "search search search search" auto
+    "filters filters filters filters" auto
+    "accommodation accommodation accommodation accommodation" auto
+    "activities activities activities activities" auto
+    "footer footer footer footer" auto;
+    margin-left: 30px;
     font-family: 'Raleway', sans-serif;
 }
+
 header{
-    grid-area: h;
+    grid-area: header;
     background-color: white;
     overflow: hidden;
 }
@@ -35,9 +40,9 @@ border-top: #0065FC solid 2px;
     float:left;
 }
 
-#A {
+.search {
     background-color: white;
-    grid-area: a;
+    grid-area: search;
     font-size: 12;
 }
 h3 {
@@ -87,24 +92,24 @@ p {
 }
 
 
-#B {
+.filters {
     background-color: white;
-    grid-area: b;
+    grid-area: filters;
 }
-.filters{
+.accommodationfilters{
     border: none;
     max-width: 100%;
     display: flex;
     flex-direction: row;
 }
-.filters ul{
+.accommodationfilters ul{
     display:flex;
     border: none;
     flex-wrap: wrap;
     padding-left: 0px;
 }
 
-.filters ul li {
+.accommodationfilters ul li {
     height: inherit;
     border: 1px solid  lightgrey;
     list-style-type: none;
@@ -122,7 +127,7 @@ p {
     padding-right: 10px;
     font-weight: 700;
 }
-.filters ul li i{
+.accommodationfilters ul li i{
     background-color: #DEEBFF;
     height: inherit;
     border-radius: 45px;
@@ -133,33 +138,33 @@ p {
     color:#0065FC;
     font-size: 17px;
 }
-.filters ul li:first-child{
+.accommodationfilters ul li:first-child{
     border: none;
     width: 70px;
     padding-left: 0px;
     margin-left: 0px;
     font-weight: 700;
 }
-.filters ul li:nth-child(2){
+.accommodationfilters ul li:nth-child(2){
     width: 105px;
     margin-left: 0;
 }
-.filters ul li:nth-child(2):hover{
+.accommodationfilters ul li:nth-child(2):hover{
     background-color:#DEEBFF;
 }
-.filters ul li:nth-child(3){
+.accommodationfilters ul li:nth-child(3){
     width: 140px;
 }
-.filters ul li:nth-child(3):hover{
+.accommodationfilters ul li:nth-child(3):hover{
     background-color:#DEEBFF;
 }
-.filters ul li:nth-child(4){
+.accommodationfilters ul li:nth-child(4){
     width: 110px;
 }
-.filters ul li:nth-child(4):hover{
+.accommodationfilters ul li:nth-child(4):hover{
     background-color:#DEEBFF;
 }
-.filters ul li:nth-child(5):hover{
+.accommodationfilters ul li:nth-child(5):hover{
     background-color: #DEEBFF;
 }
 .info{
@@ -185,15 +190,15 @@ p {
     align-items: center;
 }
 
-.sectionCD {
+.accommodation_main_container {
+    grid-area: accommodation;
     display: flex;
     flex-wrap: wrap-reverse;
     width: 100%;
-    /* box-sizing: border-box; */
     padding-left: 0px;
 }
-#C {
-    grid-area: c;
+.accommodation {
+    grid-area: accommodation;
     display:flex;
     flex-wrap: wrap;
     min-height: 500px;
@@ -209,13 +214,13 @@ p {
     align-items:flex-start;
     width: 100%;
     height: 20px;
-    padding: 20px 0px 0px 40px;
+    padding: 25px 0px 24px 40px;
     font-weight: 700;
     font-size:20px;
 }
 .hotels {
-    height: 200px;
-    width: 250px;
+    height: 230px;
+    width: 320px;
     background-color: white;
     border-radius: 1rem;
     display: flex;
@@ -257,9 +262,9 @@ p {
     font-size:20px;
 }
 
-#D {
+.most_popular {
     background-color: #f2f2f2;;
-    grid-area: d;
+    grid-area: most_popular;
     display: flex;
     min-height: 500px;
     flex: 1 1 200px;
@@ -268,6 +273,7 @@ p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-right: 30px;
 }
 
 .titlemp {
@@ -279,7 +285,7 @@ p {
     font-weight: 700;
     font-size:20px;
 }
-.chestie {
+.mp_hotel {
     height: 160px;
     width: 85%;
     border-radius: .9em;
@@ -288,28 +294,28 @@ p {
     margin-bottom: 30px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.chestie .picture {
+.mp_hotel .picture {
     display: inline-flex;
     margin: 10px;
 }
-.chestie .picture img {
+.mp_hotel .picture img {
     width: 40%;
     height: 100%;
     border-radius: 1rem 0 0 1rem;
 } 
-.chestie .picture figcaption{
+.mp_hotel .picture figcaption{
     border-radius: 0 1rem 1rem 0; 
 }
 
-#E {
-    grid-area:e;
+.activities_available {
+    grid-area: activities;
     margin-top: 60px;
     margin-bottom: 40px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 10vw);
+    grid-template-rows: repeat(2, 13vw);
     grid-gap: 15px;
-    width: 80%;
+    width: 100%;
 }
 /* .activities_in_marseille {
     border: solid 2px red;
@@ -318,7 +324,7 @@ p {
 } */
 .activities {
     border-radius: 1rem 1rem;
-    width: 300px;
+    width: 340px;
 }
 .activities figure {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -337,12 +343,12 @@ p {
     z-index: -1;
 }
 .activities figcaption {
-    height: 50px;
+    height: 70px;
     width: 100%;
     border-radius: 0 0 1rem 1rem;
     background-color: white;
     position: relative;
-    top:-50px;
+    top:-70px;
     left:0px;
     z-index: 1;
 }
@@ -375,8 +381,8 @@ p {
     grid-row: 2;
 } 
 
-#F {
-    grid-area: f;
+.footer {
+    grid-area: footer;
     display: grid;
     grid-column: 3 / 1fr;
     grid-row: 1 / 6vw;
@@ -413,25 +419,25 @@ p {
     nav a:hover {
         border-bottom: #0065FC solid 2px;
     }
-    #C {
+    .accomodation {
         margin-right: 0px;
         background-color: white;
     }
-    #C .hotels {
+    .accommodation .hotels {
         margin-top: 30px;
     }
-    #D {
+    .most_popular {
         margin-bottom: 30px;
         margin-left: 0px;
     }
-    #E {
+    .activities_available {
         display: flex;
         flex-direction: column;
     }
     .activities {
         margin-bottom: 30px;
     }
-    #F {
+    .footer {
         display: inline-block;
         margin: 0px;
         padding-left: 10px;
