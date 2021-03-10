@@ -12,21 +12,20 @@
     <script src="https://kit.fontawesome.com/555e81831b.js" crossorigin="anonymous"></script>
   </head>
   <body>
+      <!-- Header -->
+    <div id="logo">
+        <img src="Reservia3x.png" alt="Reservia" title="">
+        <a href="#signup">Sign-up</a>
+      <div id="link">
+        <a id="activ1" href="#activities">Activities</a>
+        <a id="accommlink" href='#accommodation'>Accommodation</a>
+      </div>
+    </div>
     <!--The container that contain everything except the footer -->
     <div class="container"> 
-      <header>
-          <div id="logo">
-            <img src="Reservia3x.png" alt="Reservia" title="">
-          </div>
-        <nav>
-          <a href="#signup">Sign-up</a>
-          <a id="activ" href="#activities">Activities</a>
-          <a href='#accommodation'>Accommodation</a>
-        </nav>
-      </header>
 <!--The section that contains section bar -->
       <section class="search"> 
-        <h3>Find a place for your dream vacantion</h3>
+        <h3 id="search_descr">Find a place for your dream vacation</h3>
         <p>Downtown or in nature</p>
         <div class="search">
             <div class="searchIcon">
@@ -42,30 +41,29 @@
       </section>
 <!--The section that contains the filters -->
       <section class="filters">
-        <section class="accommodationfilters">
+        <div class="accommodationfilters">
           <ul>
             <li>Filters</li>
             <li><i class="fas fa-money-bill-wave"></i>Low cost</li>
             <li><i class="fas fa-child"></i>Family-friendly</li>
-            <li><i class="fas fa-heart"></i>Romantic</li>
+            <li class="romantic"><i class="fas fa-heart"></i>Romantic</li>
             <li><i class="fas fa-dog"></i>Pets Allowed</li>
           </ul>
-        </section>
+        </div>
         <div class="info">
           <i class="fas fa-info"></i>More then 500 accomodations are available in this<br>city
          </div>
       </section>
-      <!--A container with both, section C and D to be able to arange it in page with flexbox -->
-      <div class="accommodation_main_container">
-
+      <!--A container with both, section C and D to be able to arange it in page with flex -->
+      <section class="accommodation_main_container">
         <!--The section that contains the places where tourist can find accommodation -->
-        <section class="accommodation">
-          <div class="Cdescription">Accommodations in Marseille
+        <div class="accommodation">
+          <div class="description">Accommodations in Marseille
             <a name="accommodation"></a>
           </div>
           <div class="hotels">
             <figure class="picture">
-              <img src="Img\1_xlarge\marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge la Cannebiére" title="">
+              <img src="Img/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge la Cannebiére" title="">
               <figcaption>
                 <strong> Auberge la Cannebiére </strong><br> Night starting at <strong>25€</strong><br><span class="bluestars">&#9733;&#9733;&#9733;&#9733;</span><span class="greystars">&#9733;</span>
               </figcaption>
@@ -74,7 +72,7 @@
             
           <div class="hotels">
             <figure class="picture">
-              <img src="Img\1_xlarge\fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hotel du port" title="">
+              <img src="Img/1_xlarge/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hotel du port" title="">
               <figcaption>
                  <strong>Hotel du port</strong><br> Night starting at <strong>52€</strong><br><span class="bluestars">&#9733;&#9733;&#9733;&#9733;&#9733; </span>
               </figcaption>
@@ -83,7 +81,7 @@
 
           <div class="hotels">
             <figure class="picture">
-              <img src="Img\1_xlarge\reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Les mouettes Hotel" title="">
+              <img src="Img/1_xlarge/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Les mouettes Hotel" title="">
               <figcaption>
                 <strong>Les mouettes Hotel</strong><br> Night starting at <strong>76€</strong><br><span class="bluestars">&#9733;&#9733;&#9733;&#9733;</span><span class="greystars">&#9733;</span>
               </figcaption>
@@ -92,7 +90,7 @@
 
           <div class="hotels">
             <figure class="picture">
-              <img src="Img\1_xlarge\annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hotel de la mer" title="">
+              <img src="Img/1_xlarge/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hotel de la mer" title="">
               <figcaption>
                 <strong>Hotel de la mer</strong> <br> Night starting at <strong>46€</strong><br><span class="bluestars">&#9733;&#9733;&#9733;</span><span class="greystars">&#9733;&#9733;</span>
               </figcaption>
@@ -101,7 +99,7 @@
 
           <div class="hotels">
             <figure class="picture">
-              <img src="Img\1_xlarge\nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge Le Panier" title="">
+              <img src="Img/1_xlarge/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge Le Panier" title="">
               <figcaption>
                 <strong>Auberge Le Panier</strong><br> Night starting at <strong>23€</strong><br><span class="bluestars">&#9733;&#9733;&#9733;&#9733;</span><span class="greystars">&#9733;</span>
               </figcaption>
@@ -110,57 +108,60 @@
 
           <div class="hotels">
             <figure class="picture">
-              <img src="Img\1_xlarge\febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Hotel chez Amina" title="">
+              <img src="Img/1_xlarge/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Hotel chez Amina" title="">
               <figcaption>
                 <strong>Hotel chez Amina</strong><br> Night starting at <strong>96€</strong><br><span class="bluestars">&#9733;&#9733;&#9733;&#9733;&#9733; </span>
               </figcaption>
             </figure>
           </div>
           <div class="showmorec">Show more</div>
-        </section>
+        </div>
  <!--The section that contains the most popular accommodations -->
-        <section class="most_popular">
-            <div class="titlemp">Most Popular</div>
+        <aside class="most_popular">
+            <div class="titlemp">
+              <div class="mostpopular">Most Popular</div> 
+              <div class="mpchart"><i class="fas fa-chart-line"></i></div>
+            </div>
 
             <div class="mp_hotel">
               <figure class="picture">
-                <img src="Img\1_xlarge\emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Morning Sun Hotel" >
+                <img src="Img/1_xlarge/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Morning Sun Hotel" >
                 <figcaption>
-                  <strong>Morning Sun Hotel</strong><br> Night starting at <strong>46€</strong><br><span class="bluestars">&#9733;&#9733;&#9733;&#9733;&#9733; </span>
+                  <p><strong>Morning Sun Hotel</strong></p><p> Night starting at <strong>46€</strong></p><p><span class="bluestars">&#9733;&#9733;&#9733;&#9733;&#9733; </span></p>
                 </figcaption>
               </figure> 
           </div>
 
             <div class="mp_hotel">
               <figure class="picture">
-                <img src="Img\1_xlarge\aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Au coeur de l'eau Bed and Breakfast" >
+                <img src="Img/1_xlarge/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Au coeur de l'eau Bed and Breakfast" >
                 <figcaption>
-                  <strong>Au coeur de l'eau Bed and Breakfast</strong><br> Night starting at <strong>46€</strong><br><span class="bluestars">&#9733;&#9733;&#9733;&#9733;</span><span class="greystars">&#9733;</span>
+                  <p><strong>Au coeur de l'eau Bed and Breakfast</strong></p><p> Night starting at <strong>46€</strong></p><p><span class="bluestars">&#9733;&#9733;&#9733;&#9733;</span><span class="greystars">&#9733;</span></p>
                 </figcaption>
               </figure>
             </div>
 
             <div class="mp_hotel">
               <figure class="picture">
-                <img src="Img\1_xlarge\febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Tout bleu et Blanc Hotel" >
+                <img src="Img/1_xlarge/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Tout bleu et Blanc Hotel" >
                 <figcaption>
-                  <strong>Tout bleu et Blanc Hotel</strong><br> Night starting at <strong>46€</strong><br><span class="bluestars">&#9733;&#9733;&#9733;&#9733;</span><span class="greystars">&#9733;</span>
+                  <p><strong>Tout bleu et Blanc Hotel</strong></p><p> Night starting at <strong>46€</strong></p><p><span class="bluestars">&#9733;&#9733;&#9733;&#9733;</span><span class="greystars">&#9733;</span></p>
                 </figcaption>
               </figure>
             </div>
-      </section>
-    </div>
+          </aside>
+        </section>
 
-    <!-- <div  class="activities_in_marseille">
-      <h2>Activities in Marseille</h2>
-    </div> -->
+
      <!--The section with the activities -->
       <section class="activities_available">
-
+        <div  class="activities_in_marseille">
+          <h2>Activities in Marseille</h2>
+        </div>
         <div class="activities old-port">
           <a name="activities"></a>
           <figure>
-            <img src="Img\1_xlarge\reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Old Port" >
+            <img src="Img/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Old Port" >
             <figcaption>
               <strong class="textname">Old Port</strong>
             </figcaption>
@@ -169,7 +170,7 @@
 
         <div class="activities pomegues-fort">
           <figure>
-            <img src="Img\1_xlarge\paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Pomegues Fort" >
+            <img src="Img/1_xlarge/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Pomegues Fort" >
             <figcaption>
               <strong>Pomegues Fort</strong>
             </figcaption>
@@ -178,7 +179,7 @@
 
         <div class="activities frioul-island">
           <figure>
-            <img src="Img\1_xlarge\kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Frioul Island" >
+            <img src="Img/1_xlarge/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Frioul Island" >
             <figcaption>
               <strong>Frioul Island</strong>
             </figcaption>
@@ -187,7 +188,7 @@
 
         <div class="activities calanques-park">
           <figure>
-            <img src="Img\1_xlarge\kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Calanques National Park" >
+            <img src="Img/1_xlarge/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Calanques National Park" >
             <figcaption>
               <strong>Calanques National Park</strong>
             </figcaption>
@@ -196,7 +197,7 @@
 
         <div class="activities notre-dame">
           <figure>
-            <img src="Img\1_xlarge\florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde" >
+            <img src="Img/1_xlarge/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde" >
             <figcaption>
               <strong>Notre-Dame-de-la-Garde</strong>
            </figcaption>
@@ -205,7 +206,7 @@
 
         <div class="activities longcamp">
           <figure>
-            <img src="Img\1_xlarge\lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Longcamp Park" >
+            <img src="Img/1_xlarge/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Longcamp Park" >
             <figcaption>
               <strong>Longcamp Park</strong>
             </figcaption>
@@ -214,8 +215,8 @@
       </section>
     </div>
  <!--Footer -->
-      <footer class="footer">
-        <div class="footer_about">
+      <footer >
+        <div class="footer_section">
           <h3>About</h3>
           <ul class="footerlist">
             <li><a href='#sitemap'>Site Map</a></li>
@@ -223,7 +224,7 @@
             <li><a href='#dataandprivacy'>Data and Privacy</a></li>
           </ul>
         </div>
-        <div class="footer_ouraccommodation">
+        <div class="footer_section">
           <h3>Our Accommodation</h3>
           <ul class="footerlist">
             <li><a href='#qualityassessment'>Quality Assessment</a></li>
@@ -231,7 +232,7 @@
           </ul>
         </div>
 
-        <div class="footer_assistance">
+        <div class="footer_section">
           <h3>Assistance</h3>
           <ul class="footerlist">
             <li><a href='#helpdesk'>Help Desk</a></li>
