@@ -217,6 +217,9 @@ border-top: #0065FC solid 2px;
 .hotels {/*container that holds img and description*/
     height: 25%;
     width: 25%;
+    min-width: 200px;
+    min-height: 180px;
+    max-height: 220px;
     background-color: white;
     border-radius: 1rem;
     display: flex;
@@ -269,17 +272,25 @@ border-top: #0065FC solid 2px;
     align-items: center;
 }
 .titlemp {
-    display:flex;
-    align-items:flex-start;
-    width: 100%;
+    /* display:flex;
+    align-items:flex-start; */
+    display: inline-block;
+    width: 90%;
     height: 20px;
-    padding: 25px 0px 80px 40px;
+    padding: 25px 0px 80px 25px;
     font-weight: 700;
     font-size:20px;
+}
+.mostpopular{
+    float: left;
+}
+.mpchart{
+    float: right;
 }
 .mp_hotel {
     height: 180px;
     width: 85%;
+    min-width: 300px;
     border-radius: .9em;
     background-color: rgb(255, 255, 255);
     display: flex;
@@ -332,12 +343,12 @@ border-top: #0065FC solid 2px;
     z-index: -1;
 }
 .activities figcaption {/*description*/
-    height: 70px;
+    height: 20%;
     width: 100%;
     border-radius: 0 0 1rem 1rem;
     background-color: white;
     position: relative;
-    top:-70px;
+    top:-20%;
     left:0px;
     z-index: 1;
 }
@@ -524,5 +535,17 @@ footer {
     .footer_section {
         display: block;
         padding-left: 15px;
+    }
+}
+@media only screen and (max-width: 900px) {
+    .most_popular{
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+    .activities_in_marseille{
+        margin-bottom: 20px;
+    }
+    .accommodation{
+        margin: 0px 5px 0px 5px;
     }
 }
